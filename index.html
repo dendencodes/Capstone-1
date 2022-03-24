@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<title>Portfolio</title>
 
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
 	<!-- bootstrap icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-
-	<!-- custom css -->
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
 
 </head>
 <body>
@@ -34,9 +35,6 @@
 	        <li class="nav-item">
 	          <a class="nav-link" href="#projects">Projects</a>
 	        </li>
-	        <!-- <li class="nav-item">
-	          <a class="nav-link" href="#resume">Resume</a>
-	        </li> -->
 	      </ul>
 	    </div>
 	  </div>
@@ -83,10 +81,9 @@
 					I graduated from De La Salle-College of St. Benilde with a degree in Business Administration major in Computer Applications with specialization in Analytics.
 					Upon graduating, I have taken on the role of Marketing Communications Associate at Sigmatech Inc. a company specializing in sales of scientific equipment.
 					Long inspired by tech innovators such as Mark Zuckerberg and Steve Jobs, I have always been interested in pursuing a career in IT. Hence I enrolled myself to a programming bootcamp called Zuitt.
-					Having finished the program recently, I am seeking an opportunity in the IT industry, especially in the field of software and web development
+					Having finished the program recently, I am now seeking an opportunity in the IT industry, especially in the field of software and web development
 					where I can utilize, at the same time further hone my skills and knowledge.
-					A hardworker and an eager learner, I strive to become a successful developer and eventually an internet entrepreneur.
-					</p>
+					A hardworker and an eager learner, I strive to become a successful developer.
 				</div>
 				<div class="col-md-6">
 					<h3 class="text-center">Skills</h3>
@@ -99,8 +96,8 @@
 								<li>JavaScript</li>
 							</div>
 							<div class="col-lg-4">
-								<li>SQL/ NoSQL</li>
-								<li>Express RESTful API</li>
+								<li>MongoDB</li>
+								<li>ExpressJS API</li>
 								<li>NodeJS</li>
 								<li>ReactJS</li>
 							</div>
@@ -126,32 +123,86 @@
 				</div>
 			</div>
 
-			<div class="row mt-3">
-				<div class="col-lg-4">
+			<div class="row m-3">
+
+				<!-- <div class="col-lg-6 p-5">
 					<img src="images/img-portfolio.png" class="card-img-top m-6" alt="...">
 					 <div class="card-body">
 					    <h5 class="card-title text-center">Portfolio</h5>
 						<p class= 'justify-content-center'>This exact github-pages portfolio written in HTML, CSS and Bootstrap.</p>
 					 </div>
-				</div>
-				
-				<div class="col-lg-4">
-					<img src="images/img-booking.png" class="card-img-top m-6" alt="...">
-					 <div class="card-body">
-					    <h5 class="card-title text-center">Booking System API</h5>
-						<p>A Course Booking back-end API hosted in Heroku, that connects to MongoDB.</p>
-					 </div>
-				</div>
+				</div> -->
 
-				<div class="col-lg-4">
-					<img src="images/img-fullstack.png" class="card-img-top m-6" alt="...">
-					 <div class="card-body">
-					    <h5 class="card-title text-center">Full Stack</h5>
-						<p>Fully functional E-commerce web application hosted in Vercel with Customer/Admin functions & features, integrating a reactive single webpage with the back-end API.</p>
-						<a href="https://csp3-fe.vercel.app/">Capstone 3</a>
-					 </div>
-				</div>
+				<div class="card col-lg-6 p-5 border-0" id="headingOne">
+					<button class="btn btn-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<img src="images/img-portfolio.png" class="card-img-top m-6" alt="...">
+						<h5 class="card-title text-center mt-3">Portfolio</h5>
+					</button>
+			
+					<div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+				  		<div class="card-body">
+							<p class= 'justify-content-center'>This exact github-pages portfolio custom-written in HTML, CSS and Bootstrap.</p>
+				  		</div>
+					</div>
+			  	</div>
+
+				<div class="card col-lg-6 p-5 border-0" id="headingTwo">
+					<button class="btn btn-light" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+						<img src="images/img-booking.png" class="card-img-top m-6" alt="...">
+						<h5 class="card-title text-center mt-3">E-commerce Backend API</h5>
+					</button>
+			
+					<div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordion">
+				  		<div class="card-body">
+							<p>
+							E-commerce API hosted in Heroku, connecting to MongoDB. 
+							<a href='https://evening-mesa-53135.herokuapp.com/'>Try on Postman</a>
+							<p>Admin credentials- user:admin@mail.com pw:admin</p>
+							</p>
+							<p>Routes:</p>
+							<ul>
+								<li>POST - REGISTER: https://evening-mesa-53135.herokuapp.com/users/register</li>
+								<li>POST - LOGIN: https://evening-mesa-53135.herokuapp.com/users/login</li>
+								<li>POST - ADD PRODUCTS: https://evening-mesa-53135.herokuapp.com/products/</li>
+								<li>GET - ACTIVE PRODUCTS: https://evening-mesa-53135.herokuapp.com/products/active</li>
+								<li>GET - SPECIFIC PRODUCT: https://evening-mesa-53135.herokuapp.com/products/:id</li>
+								<li>PUT - UPDATE PRODUCT: https://evening-mesa-53135.herokuapp.com/products/:id</li>
+								<li>DEL - DELETE PRODUCT: https://evening-mesa-53135.herokuapp.com/products/:id</li>
+								<li>...ETC</li>
+							</ul>
+				  		</div>
+					</div>
+			  	</div>
+
 			</div>
+
+			<div class="row m-3">
+
+				<div class="card col-lg-6 p-5 border-0" id="headingThree">
+					<button class="btn btn-light" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+					  <img src="images/img-fullstack.png" class="card-img-top m-6" alt="...">
+					  <h5 class="card-title text-center mt-3">Full Stack E-Commerce Web App</h5>
+					</button>
+			
+					<div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordion">
+				  		<div class="card-body">
+							<p>Fully functional E-commerce web application hosted in Vercel with Customer/Admin functions & features, integrating a reactive single webpage with the back-end API.</p>
+							<a href="https://csp3-fe.vercel.app/">Capstone 3</a>
+							<p>Snaps:</p>
+							<ul col-lg-6>
+								<li><img src="images/fs1.png" class="img-thumbnail img-responsive" alt="..."></li>
+								<li><img src="images/fs2.png" class="img-thumbnail img-responsive card-img-top m-6" alt="..."></li>
+							</ul>
+							<ul col-lg-6>
+								<li><img src="images/fs3.png" class="img-thumbnail img-responsive card-img-top m-6" alt="..."></li>
+								<li><img src="images/fs4.png" class="img-thumbnail img-responsive card-img-top m-6" alt="..."></li>
+							</ul>
+				  		</div>
+					</div>
+			  	</div>
+
+			</div>
+
 		</div>
 	</section>
 
@@ -206,6 +257,9 @@
 	</footer>
 
 	<!-- bootstrap js -->
-	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
